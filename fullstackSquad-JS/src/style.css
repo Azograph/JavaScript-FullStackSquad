@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+ul {
+    margin-bottom: 10vh;
+}
+
+li {
+    margin: 5vh;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8vh;
+    font-weight: 600;
+    margin-bottom: 3vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    margin: 1.5vh
+}
