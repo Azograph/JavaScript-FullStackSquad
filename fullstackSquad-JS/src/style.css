@@ -1,27 +1,28 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+body {
+    text-align: center;
+}
 
 ul {
     margin-bottom: 10vh;
 }
 
-li {
-    margin: 5vh;
-    text-align: center;
-}
-
 h1 {
-    text-align: center;
-    font-size: 8vh;
+    font-size: 6vh;
     font-weight: 600;
     margin-bottom: 3vh;
 }
 
 h2 {
-    text-align: center;
+    font-style: italic;
+}
+
+button {
+    margin: 2vh;
 }
 
 nav {
-    margin: 1.5vh
+    padding: 1.5vh
 }
