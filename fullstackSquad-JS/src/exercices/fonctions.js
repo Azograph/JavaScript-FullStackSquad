@@ -1,24 +1,27 @@
 
-    // // Créer une focntion qui prend un nombre en paramètre.
-    // // La fonction doit afficher en console: 33+ le nombre reçu en paramètre.
-    // function test(number=1) { 
-    //     console.log (33 + number)
-    //     }
-    // test(30);
+        console.log ("///Exercice 1 / Fonctions Base");
 
-    // // Créer une fonction qui prend 2 nombres en paramètre.
-    // // Cette seconde fonction doit afficher en console l'addition des 2 nombres reçus en paramètre. 
-    // function test2(number1=1, number2=1) {
-    //     console.log(number1 + number2)
-    // }
-    // test2(20,10);
-    // test2(); // Cas d'erreur
+// Créer une focntion qui prend un nombre en paramètre.
+    // La fonction doit afficher en console: 33+ le nombre reçu en paramètre.
+    function test(number=1) { 
+        console.log (33 + number)
+        }
+    test(30);
 
-    // // Fonction responsable :
-    // function test3(number1=1, number2=1) {
-    //     return number1 + number2
-    // }
-    // console.log(test3(20,10));
+    // Créer une fonction qui prend 2 nombres en paramètre.
+    // Cette seconde fonction doit afficher en console l'addition des 2 nombres reçus en paramètre. 
+    function test2(number1=1, number2=1) {
+        console.log(number1 + number2)
+    }
+    test2(20,10);
+    test2(); // Cas d'erreur
+
+    // Fonction responsable :
+    function test3(number1=1, number2=1) {
+        return number1 + number2
+    }
+    console.log(test3(20,10));
+
 
 // CORRECTION 
 
@@ -68,19 +71,76 @@
 // console.log(additionnerOptiSécurisée("azerty", 3));
 
 
-let notes = [0,3,4,6,18,19,4]
+ //Calcule moyenne 1
+        console.log ("///Exercice 2 / Boucles");
 
-function calculerMoyenne ([]) {
-    total= 0
-    somme= 0
-    moyenne= 0
+let notes = [0,3,4,6,18,19,4];
+
+function calculerMoyenne (notes) {
+    let total= 0;
+    let somme= 0;
+    let moyenne= 0;
     for (const element of notes) {
         somme += element 
         total +=1
     }
-    moyenne = somme / total
-    return moyenne
+    moyenne = somme / total;
+    return moyenne;
+};
+
+let resultat = calculerMoyenne (notes);
+console.log (" La moyenne des notes de Tibo est : " , resultat);
+
+//Calcule moyenne 2
+let notesTibo = [0,3,4,6,18,19,4];
+
+function calculerMoyenneTibo (note) {
+    let sommes = 0;
+    for (let i = 0; i < note.length; i++) {
+        sommes += note[i]
+    }
+    return sommes / note.length;
 }
 
-let resultat = calculerMoyenne (notes)
-console.log (resultat)
+let moyenneTibo = calculerMoyenneTibo(notesTibo);
+console.log (moyenneTibo);
+
+
+// Test / Parcourir tableau
+        console.log ("///test");
+
+const couleurs = ["rouge", "jaune", "bleu"];
+couleurs[5] = "violet";
+couleurs.forEach((item, index) => {
+    console.log(`${index}: ${item}`);
+});
+
+// Exercice 3 / if else
+        console.log ("///Exercice 3 / If Else");
+
+function calculerMoyenneMention (notes) {
+    let total= 0;
+    let somme= 0;
+    let moyenne= 0;
+    for (const element of notes) {
+        somme += element 
+        total +=1
+    }
+    moyenne = somme / total;
+    if (moyenne >=15) {
+        mention = "Très Bien" ;
+    }
+    else if (moyenne >= 10 ) {
+        mention = "Assez bien";
+    }
+    else {
+        mention = "Refus";
+    }
+    return mention;
+};
+
+resultatMention = calculerMoyenneMention(notes);
+console.log (resultatMention);
+
+
+
