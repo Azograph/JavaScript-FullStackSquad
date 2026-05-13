@@ -16,6 +16,10 @@ h1 {
 }
 
 h2 {
+    font-weight: 500;
+}
+
+h3 {
     font-style: italic;
 }
 
@@ -26,3 +30,13 @@ button {
 nav {
     padding: 1.5vh
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    background-color: aliceblue;
+    padding: 2vh;
+}
+
