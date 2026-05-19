@@ -1,10 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-body {
-    text-align: center;
-}
-
 ul {
     margin-bottom: 10vh;
 }
@@ -19,9 +15,9 @@ h2 {
     font-weight: 500;
 }
 
-h3 {
+/* h3 {
     font-style: italic;
-}
+} */
 
 button {
     margin: 2vh;
@@ -31,12 +27,5 @@ nav {
     padding: 1.5vh
 }
 
-/* .container {
-    display: flex;
-    justify-content: space-around;
-}
-.card {
-    background-color: aliceblue;
-    padding: 2vh;
-} */
+
 
