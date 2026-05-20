@@ -1,3 +1,4 @@
+//Click changement de titre :
 let divUser = document.querySelector('.emote');
 let isClicked = false;
 divUser.addEventListener('click',()=>{
@@ -6,6 +7,7 @@ divUser.addEventListener('click',()=>{
     isClicked = !isClicked;
 });
 
+//Boutons changement de class :
 let titre = document.querySelector('h1');
 let btnAjouter = document.querySelector('.ajouter');
 let btnSupprimer = document.querySelector('.supprimer');
@@ -21,21 +23,6 @@ btnSupprimer.addEventListener('click',()=>{
 
 btnToggle.addEventListener('click',()=>{
     titre.classList.toggle('titre');
-});
-
-const laDiv = document.querySelector('.vide');
-
-
-
-document.addEventListener('click', (clickEvent) => {
-    console.log('coord X',clickEvent.pageX);
-    console.log('coord Y',clickEvent.pageY);
-    const newImage = new Image();
-    newImage.src="https://terraria.wiki.gg/images/Blue_Horseshoe_Balloon.png?a25222";
-    newImage.style.position='absolute';
-    newImage.style.top= clickEvent.y - (newImage.height/2) +'px';
-    newImage.style.left= clickEvent.x - (newImage.width/2) +'px';
-    document.body.append(newImage);
 });
 
 // Autre method plus efficace (ajuster les classes dans le html): 
@@ -54,3 +41,30 @@ document.addEventListener('click', (clickEvent) => {
 //     console.log('Click sur TOGGLE');
 //     secondTitle.classList.toggle('superClass')
 // });
+
+
+//Image au click :
+document.addEventListener('click', (clickEvent) => {
+    console.log('coord X',clickEvent.pageX);
+    console.log('coord Y',clickEvent.pageY);
+    const newImage = new Image();
+    newImage.src="https://terraria.wiki.gg/images/Blue_Horseshoe_Balloon.png?a25222";
+    newImage.style.position='absolute';
+    newImage.style.top= clickEvent.y - (newImage.height/2) +'px';
+    newImage.style.left= clickEvent.x - (newImage.width/2) +'px';
+    document.body.append(newImage);
+});
+
+// Focus et blur :
+
+let input = document.querySelector('input');
+
+input.addEventListener('focus', () => {
+    input.style.backgroundColor= 'lightblue';
+    input.style.color = 'blue';
+});
+
+input.addEventListener('blur',() => {
+    input.style.backgroundColor= 'white';
+    input.style.color = 'black';
+});
