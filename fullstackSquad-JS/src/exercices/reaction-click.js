@@ -68,3 +68,10 @@ input.addEventListener('blur',() => {
     input.style.backgroundColor= 'white';
     input.style.color = 'black';
 });
+
+// mousleave (quand le curseur quitte la page)
+
+let h2 = document.querySelector('h2');
+document.addEventListener('mouseleave',() => {
+    h2.style.display= 'block';
+});

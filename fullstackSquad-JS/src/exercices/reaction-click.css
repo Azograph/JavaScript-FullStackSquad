@@ -32,3 +32,10 @@ button {
 .supprimer {
     background-color: rgb(201, 98, 39);
 }
+
+h2 {
+    display: none;
+    color: red;
+    text-align: center;
+    font-size: 5em;;
+}
