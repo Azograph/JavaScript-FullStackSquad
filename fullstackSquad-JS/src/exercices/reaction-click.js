@@ -1,6 +1,7 @@
 //Click changement de titre :
 let divUser = document.querySelector('.emote');
 let isClicked = false;
+
 divUser.addEventListener('click',()=>{
     divUser.innerText='🦄';
     divUser.innerText = isClicked ? '🦄' : 'Exercice reaction click';

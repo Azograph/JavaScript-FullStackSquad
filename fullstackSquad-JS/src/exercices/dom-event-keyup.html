@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <script defer src="dom-keyup.js"></script>
+    <title>Exercices dom keyup</title>
+</head>
+<body class="bg">
+    <header>
+        <nav>
+            <button class="btn btn-success"><a href="/index.html">Home</a></button>
+        </nav>
+        <h1>Exercice dom keyup</h1>
+    </header> 
+
+    <main>
+        <fieldset class="fieldset w-full max-w-xl">
+            <legend class="fieldset-legend">On réagit au keyup</legend>
+            <input id="input-exercice-keyup" type="text" class="input input-bordered w-full" placeholder="Type here" value="kebab" />
+            <p id="renderKeyboard"></p>
+        </fieldset>
+
+                <fieldset class="fieldset w-full max-w-xl">
+            <legend class="fieldset-legend">On réagit au keyup et on bloque</legend>
+            <input id="input-exercice2-keyup" type="text" class="input input-bordered w-full" placeholder="Type here" value="kebab" />
+            <p id="exercice2RenderKey"></p>
+            <button disabled class="btn btn-info exo2"><a href="#">Envoyer</a></button>
+        </fieldset>
+
+
+    </main>
+</body>
+</html>
