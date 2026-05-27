@@ -9,7 +9,8 @@ const userData = {
   img:'https://www.boredpanda.com/blog/wp-content/uploads/2022/06/funny-low-cost-cosplay-pics-62a744d39c80a__700.jpg'
 };
 
-const laDiv = document.querySelector('.vide');
+
+
 console.log(laDiv);
 laDiv.style.width = '400px';
 laDiv.style.padding = "3vh";
@@ -26,6 +27,8 @@ image.alt = 'photo de profil';
 // const myImage = new Image();
 // myImage.src = 'https://www.boredpanda.com/blog/wp-content/uploads/2022/06/funny-low-cost-cosplay-pics-62a744d39c80a__700.jpg';
 // laDiv.appendChild(myImage)
+
+const laDiv = document.querySelector('.vide');
 
 const Name = document.createElement('h2');
 Name.innerText = userData.name;

@@ -27,5 +27,43 @@ nav {
     padding: 1.5vh
 }
 
+/* exercice map */ 
+#map { 
+    height: 300px; 
+    width: 100%;
+}
 
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    max-width: 70%;
+}
 
+.card {
+    padding: 2vh;
+    margin: 1vh;
+}
+
+.cardMap {
+    background-color: var(--color-clair);
+    border-radius: 1vh;
+}
+
+.cardShadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* Input check */
+
+#inputCheck {
+    input {
+        background-color: rgb(238, 239, 252);
+        border: 1px solid rgb(117, 116, 182);
+        border-radius: 0.5vh;
+        margin: 0.5vh;
+        padding: 0.3vh;
+    }
+}
